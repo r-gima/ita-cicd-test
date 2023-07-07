@@ -6,7 +6,7 @@
     - "{{ VAR_packages }}"
 
 - name: Check yum list
-  shell:yum list installed | grep "{{ item }}"
+  shell: yum list installed | grep "{{ item }}"
   register: result
   with_items:
     - "{{ VAR_packages }}"
